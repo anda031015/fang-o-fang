@@ -1,5 +1,5 @@
 //node.js via socket.io
-const socket = io();
+const socket = io('https://fang-over-fang.onrender.com');
 
 //adding message to chat
 function addMessageToChat(username, message) {

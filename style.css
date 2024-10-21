@@ -132,20 +132,6 @@ ul.links {
     transition: translate 0.3s, background-color 0.8s;
     background: #fff;
 }
-  
-input {
-    position: absolute;
-    appearance: none;
-}
-
-button {
-    border: none;
-    background-color: inherit;
-}
-
-button:hover {
-    background-color: #3A3B3C;
-}
 
 header {
     font-family: "Viola";

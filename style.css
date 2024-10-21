@@ -119,34 +119,24 @@ ul.links {
 }
 
 .toggle {
-  position: relative;
-  overflow: hidden;
-  display: inline-flex;
-  gap: 0.75rem;
-  align-items: center;
-  padding: 0.5rem;
-  background-color: #444;
-  border-radius: 2rem;
-  user-select: none;
-  cursor: pointer;
-  transition: translate 0.3s, background-color 0.8s;
-  
-  & ::before {
-    position: absolute;
-    top: 1px;
-    left: 1px;
-    content: "";
-        height: calc(100% - 2px);
-    aspect-ratio: 1;
-    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    display: inline-flex;
+    gap: 0.75rem;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: #444;
+    border-radius: 2rem;
+    user-select: none;
+    cursor: pointer;
     transition: translate 0.3s, background-color 0.8s;
     background: #fff;
-  }
+}
   
-  input {
+input {
     position: absolute;
     appearance: none;
-  }
+}
 
 button {
     border: none;

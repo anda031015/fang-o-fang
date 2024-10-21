@@ -2,17 +2,20 @@
 const socket = io('https://fang-over-fang.onrender.com');
 
 //adding message to chat
-function addMessageToChat(username, message) {
+function addMessageToChat(message) {
   const messageBoard = document.getElementById('message-board');
+  //new div element for messages
   const newMessage = document.createElement('div');
-  newMessage.textContent = `${username}: ${message}`;
-  
+  newMessage.classList.add('message');//css message method
+  newMessage.textContent = message;
+  //add new message to message board
   messageBoard.appendChild(newMessage);
+  
     messageBoard.scrollTop = messageBoard.scrollHeight; //autoscroll to bottom of chat
     
   //read messages from server to show in message board
   socket.on('message', (msg) => {
-    addMessageToChat('User', msg.content);
+    addMessageToChat(msg);
   });
   
   //sending message -> event button
@@ -24,5 +27,6 @@ function addMessageToChat(username, message) {
         socket.emit('message', message); //send to server
         messageInput.value = ''; //clear input field
       }
-    });
-} 
+  });
+    
+}

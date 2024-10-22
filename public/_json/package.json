@@ -3,16 +3,26 @@
   "version": "1.0.0",
   "main": "/public/_js/server.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "node /public/_js/server.js",
+    "dev": "nodemon /public/_js/server.js",
     "build":"echo 'No build step needed'"
   },
   "keywords": [],
-  "author": "",
+  "author": "Sisanda Mabusela",
   "license": "ISC",
   "description": "",
   "dependencies": {
     "express": "^4.21.1",
     "mongodb": "^6.9.0",
-    "socket.io": "^4.8.0"
+    "socket.io": "^4.8.0",
+    "dotenv": "^16.4.5",
+    "mongodb-connection-string-url": "^3.0.1",
+    "mongoose": "^8.7.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }, 
+  "engines": {
+    "node": "20.18.0"
   }
 }

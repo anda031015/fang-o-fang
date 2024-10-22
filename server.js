@@ -10,7 +10,7 @@ const io = require('socket.io')(server);
 
 //websocket connections
 io.on('connection', (socket) => {
-  console.log('New soul has entered The Wire:', socket.id);
+  console.log('New soul has entered The Wire:');
   //listen for new messages
   socket.on('message', (msg) => {
     console.log('Processing response:', msg);
@@ -19,7 +19,7 @@ io.on('connection', (socket) => {
   
   //user disconnection
   socket.on('disconnect', () => {
-    console.log('Soul has left The Wire', socket.id);
+    console.log('Soul has left The Wire');
   });
 });
 

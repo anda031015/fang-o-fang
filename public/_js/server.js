@@ -26,6 +26,6 @@ io.on('connection', (socket) => {
 //start on port 3000 (access chat at http://localhost:3000)
 const PORT = process.env.PORT || 10000; //process.env.PORT ensures that server can start on whatever port Render uses
 server.listen(PORT, () => {
-    console.log(`On the ${PORT}th of hell`);
+    console.log(`On the ${PORT}th layer of hell`);
   });
   

@@ -1,31 +1,31 @@
 @font-face {
   font-family: "Hylian";
-  src: url('/public/Fonts/HyliaSerifBeta-Regular.otf');
+  src: url('/Fonts/HyliaSerifBeta-Regular.otf');
 }
 
 @font-face {
   font-family: "Bleach";
-  src: url('/public/Fonts/Bleach-8jnJ.ttf');
+  src: url('/Fonts/Bleach-8jnJ.ttf');
 }
 
 @font-face {
   font-family: "JJK";
-  src: url('/public/Fonts/Qetod.ttf');
+  src: url('/Fonts/Qetod.ttf');
 }
 
 @font-face {
 font-family: "PPNeue PlainReg";
-src: url('/public/Fonts/PPNeueMachina-PlainRegular.otf');
+src: url('/Fonts/PPNeueMachina-PlainRegular.otf');
 }
 
 @font-face {
 font-family: "Viola";
-src: url('/public/Fonts/VIOLA.ttf');
+src: url('/Fonts/VIOLA.ttf');
 }
 
 @font-face {
 font-family: "Futura CondLight";
-src: url('/public/Fonts/futura-condensedlight.otf');
+src: url('/Fonts/futura-condensedlight.otf');
 }
 
 html {
@@ -35,7 +35,7 @@ html {
 }
 
 body {
-  background-image: url('/public/Media/Gifs/');
+  background-image: url('/Media/Gifs/darkBackground.gif');
   background-size: cover;
   background-attachment: fixed;
   margin: 20px;
@@ -114,7 +114,7 @@ float: left;
 filter: invert(100%);
 }
 .light-theme {
-  background-image: url("Media/Gifs/lightThemePageBackground.gif");
+  background-image: url("/Media/Gifs/lightThemePageBackground.gif");
   color: black;
 }
 
@@ -146,7 +146,7 @@ header {
   
 h1 {
   font-size: 0.9em;
-  background-image: url("Media/Images/h1TextBoxBackground.jpg");
+  background-image: url("/Media/Images/h1TextBoxBackground.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 190% 190%;
@@ -167,7 +167,7 @@ h2 {
 
 .topnav {
 overflow: hidden;
-background-image: url('Media/Images/ClancyCover-Only Background.png');
+background-image: url('/Media/Images/ClancyCover-Only Background.png');
 background-size: inherit;
 }
 
@@ -198,13 +198,13 @@ color: black;
 }
 
 .midImg {
-  background-image: url('Media/Gifs/serialExperimentLainTypeBackground.gif');
+  background-image: url('/Media/Gifs/serialExperimentLainTypeBackground.gif');
   background-repeat: no-repeat;
   padding: 20px;
 }
 
 .characterImage {
-  background-image: url('Media/Images/charEdited.png');
+  background-image: url('/Media/Images/charEdited.png');
   background-repeat: no-repeat;
   background-position: right;
   width: auto;
@@ -254,7 +254,7 @@ font-size: 70px;
 }
 
 .elementBackground {
-background-image: url('Media/Images/standardElementBorder.jpg');
+background-image: url('/Media/Images/standardElementBorder.jpg');
 }
 
 .chat-container {

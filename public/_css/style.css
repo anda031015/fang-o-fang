@@ -1,41 +1,41 @@
 @font-face {
   font-family: "Hylian";
-  src: url('Fonts/HyliaSerifBeta-Regular.otf');
+  src: url('/public/Fonts/HyliaSerifBeta-Regular.otf');
 }
 
 @font-face {
   font-family: "Bleach";
-  src: url('Fonts/Bleach.ttf');
+  src: url('/public/Fonts/Bleach-8jnJ.ttf');
 }
 
 @font-face {
   font-family: "JJK";
-  src: url('Fonts/Qetod.ttf');
+  src: url('/public/Fonts/Qetod.ttf');
 }
 
 @font-face {
 font-family: "PPNeue PlainReg";
-src: url('Fonts/PPNeueMachina-PlainRegular.otf');
+src: url('/public/Fonts/PPNeueMachina-PlainRegular.otf');
 }
 
 @font-face {
 font-family: "Viola";
-src: url('Fonts/VIOLA.ttf');
+src: url('/public/Fonts/VIOLA.ttf');
 }
 
 @font-face {
 font-family: "Futura CondLight";
-src: url('Fonts/futura-condensedlight.otf');
+src: url('/public/Fonts/futura-condensedlight.otf');
 }
 
 html {
   min-height: 100%;
   position: relative;
-  cursor: url('Cursors/babyYodaCursor.gif'), default;
+  cursor: url('/Cursors/babyYodaCursor.gif'), default;
 }
 
 body {
-  background-image: url('Media/Gifs/darkBackground.gif');
+  background-image: url('/public/Media/Gifs/');
   background-size: cover;
   background-attachment: fixed;
   margin: 20px;

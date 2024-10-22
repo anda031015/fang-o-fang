@@ -6,7 +6,7 @@ const { Server } = require('socket.io');
 //create express 
 const app = express();
 const server = http.createServer(app);
-const io = new Server(server);
+const io = require('socket.io')(server);
 
 //websocket connections
 io.on('connection', (socket) => {

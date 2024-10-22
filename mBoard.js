@@ -15,7 +15,7 @@ function addMessageToChat(message) {
     
   //read messages from server to show in message board
   socket.on('message', (msg) => {
-    addMessageToChat(msg);
+    document.getElementById('messages').innerHTML += `<p>${msg}</p>`
   });
   
   //sending message -> event button

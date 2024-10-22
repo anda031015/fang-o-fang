@@ -1,7 +1,7 @@
 {
   "name": "message-board",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "/public/_js/server.js",
   "scripts": {
     "start": "node server.js" 
   },

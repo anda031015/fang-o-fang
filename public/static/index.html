@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,31 +10,35 @@
     <link href="_css/style.css" rel="stylesheet" type="text/css" media="all">
   </head>
   
-  <body>
-  
-  <div class="header">
-    <header>Fang.o.Fang</header>
-    <center>
-      <h2>Present Day, Present Time:
-      <span id="dateTime"></span>
-      </h2>
-        <script src="_js/dateAccess.js"></script>
-    </center>
+  <body class = "dark-theme">
+  <!-- Title and scrolling time heading -->
+  <div id="nav-bar" style = "background-image: url('Media/Images/otherH1Background.jpg');object-fit: contain;overflow-x: hidden;">
+    <div id="button-container">
+      <button id="themeButton" style=""><i class="fa fa-adjust" aria-label="Change to light theme"></i></button>
+        <script src="_js/lMode.js"></script>
+    </div>
+    <div class="header">
+      <header>Fang.o.Fang</header>
+      <center>
+        <div id="scroll-container"> 
+          <div id="scroll-text"><h2>Present Day, Present Time:<span id="dateTime"></span>
+          </h2><script src="_js/dateAccess.js"></script>
+          </div>
+        </div> <!-- end of scrolling textbox -->
+      </center>
+    </div> <!-- end of website title area -->
   </div>
-  
-  <button class="w3-button w3-circle w3-black"></button>
-    <script src="_js/lMode.js"></script>   
     
     <table class="clear" width="1000px"><tr><td>
       <table class="clear" width="998px"><tr><td> 
         <p class="image-holder"><img src="Media/Images/HomePageIcon.png" width="400px" alt="kenjakuUzumaki"/></p></td><td>
       </td></tr></table>
           
-          <div class="stack">
-    		    <ul id="over" class="links">
-    				  <li><a href="#"><img class="invert" src="Media/Images/compMusicLiElementInvert.png" height="80px"></a></li>
-  		    </ul>
-        </div>
+      <div class="stack"> 
+  		  <ul id="over" class="links">
+  				  <li><a class="home-links" href="#">MUSIC</a></li>
+		    </ul> 
+      </div>
         
     </td></tr></table>
 
@@ -46,11 +50,12 @@
               <h2 style="color:black;font-family: JJK;font-size:24px;">Under Construction</h2>
                 <div class="conImage">
                   <img src="Media/Gifs/underConstructionIcon.gif" width="150px" alt="lain.exe">
-                </div>
+                </div> 
             </div>
         </div>
     </div>
-<div class="container" style="padding-top:30px;">
+    
+<!--<div class="container" style="padding-top:30px;">
       <img src="Media/Gifs/dyingWalkman.gif" alt="Dying Walkman" width="150" height="150">
       <p>Website overtime will more than likely contain:</p>
         <ul>
@@ -59,7 +64,7 @@
           <li><a href="#">Hyperfixation Rants</a></li>
           <li><a href="#">Anime and Manga Discussions</a></li>
         </ul>
-    </div>
+    </div>-->
 
     <div class="footer">
       <div class = "row-social" allign = "center">
@@ -71,4 +76,4 @@
       </div>
     </div>
 </body>
-</html>    
+</html>   

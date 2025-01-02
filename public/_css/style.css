@@ -28,20 +28,92 @@ font-family: "Futura CondLight";
 src: url('/Fonts/futura-condensedlight.otf');
 }
 
+@font-face {
+  font-family: "Sheikah";
+  src: url('/Fonts/sheikah-complete.ttf');
+}
+
 html {
   min-height: 100%;
   position: relative;
   cursor: url('/Cursors/babyYodaCursor.gif'), default;
 }
 
+[data-theme = "dark"] {
+  --color-bg: #333333	
+  --color-fg: #0000;
+}
+
+[data-theme = "light"] {
+  --color-bg:  #e6e6e6;
+  --color-fg: black;
+}
+:root {
+  --primary-color: black;
+  --bg-color: grey;
+  --text-color: white;
+  --bg-image: url('Media/Gifs/darkBackground.gif');
+}
+
+.light-theme {
+    --primary-color: #000;
+    --bg-color: white;
+    --text-color: black;
+    --bg-image: url('Media/Gifs/lightThemePageBackground.gif');
+}
+
 body {
-  background-image: url('/Media/Gifs/darkBackground.gif');
-  background-size: cover;
-  background-attachment: fixed;
-  margin: 20px;
   font-family: "Futura CondLight";
-  color: white;
   transition: background-image 0.5s;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  background-image: var(--bg-image);
+  background-size: cover;
+  background-position: center;
+}
+
+#scroll-text {
+  border: 5px solid transparent;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#scroll-text {
+  /* animation properties */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  transform: translateX(100%);
+  
+  -moz-animation: my-animation 15s linear infinite;
+  -webkit-animation: my-animation 15s linear infinite;
+  animation: my-animation 15s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from { -moz-transform: translateX(100%); }
+  to { -moz-transform: translateX(-100%); }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateX(100%); }
+  to { -webkit-transform: translateX(-100%); }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  to {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
 }
 
 .stack {
@@ -51,6 +123,7 @@ margin:auto;
 border:0px solid #000;
 position:relative;
 }
+
 .image-holder {
 float:left;
 margin:6px 10px 10px 0;
@@ -58,7 +131,7 @@ width:400px;
 height:200px;
 border:0px solid #000;
 padding:1px;
-position:relative;
+position:absolute;
 z-index:1;
 display:block;
 }
@@ -89,15 +162,12 @@ margin:0 0 5px
 visibility:visible;
 } 
 
-ul {
-float: right;
-list-style-type: none;
-padding: 0;
-margin: 0;
-}
-
-ul.links {
-list-style: none;
+a.home-links {
+  font: Hylian;
+  font-size: 3.5rem;
+  color: black;
+  text-align: right;
+  list-style-position: inside;
 }
 
 .container {
@@ -112,10 +182,6 @@ float: left;
 
 .invert:hover {
 filter: invert(100%);
-}
-.light-theme {
-  background-image: url("/Media/Gifs/lightThemePageBackground.gif");
-  color: black;
 }
 
 .toggle {
@@ -139,14 +205,13 @@ header {
   margin-bottom: 0.15em;
   text-align: center;
   font-size: 4.5em;
-  color: white;
+  color: var(--text-color);
   text-shadow: 4px 4px #F4C430;
   text-transform: uppercase;
 }
   
 h1 {
   font-size: 0.9em;
-  background-image: url("/Media/Images/h1TextBoxBackground.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 190% 190%;
@@ -160,9 +225,11 @@ h1 {
 }
 
 h2 {
-  font-size: 0.9em;
+  font-size: 1.25rem;
   text-align: center;
   color: white;
+  margin: 0;
+  padding: 0;
 }
 
 .topnav {
